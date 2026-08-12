@@ -1,4 +1,19 @@
-# Modeling Sports Attendance in Argentina with Bayesian Hierarchical Models
+# Bayesian Modeling of Football Attendance
+
+A hierarchical Bayesian analysis of stadium attendance in Argentina, built with PyMC to model team-level differences, weekday effects, overdispersed count data, and missing observations.
+
+## Highlights
+
+- Built a hierarchical Negative Binomial model with varying team intercepts and weekday effects
+- Compared hierarchical and complete-pooling approaches
+- Evaluated predictive performance using PSIS-LOO
+- Used posterior predictive checks and MCMC diagnostics to assess model fit
+- Generated posterior predictive distributions for games with missing scanner data
+- Produced uncertainty-aware attendance estimates rather than single-point imputations
+
+### Stack
+
+`Python` `PyMC` `Bayesian Statistics` `MCMC` `Jupyter`
 
 ## Project overview
 This project models stadium attendance for football matches in Argentina using Bayesian methods. The goal is to understand how attendance varies by team and by day of the week and to build a model that can predict attendance for future games, even when some scanner data is missing.
@@ -62,4 +77,3 @@ Key findings:
 
 - `sports-attendance-data.csv`  
   Raw attendance data used in the analysis.
-
